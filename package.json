@@ -2,8 +2,8 @@
   "name": "featured-tags",
   "version": "0.2.1",
   "scripts": {
-    "build": "wp-scripts build",
-    "start": "wp-scripts start",
+    "build": "wp-scripts build client/admin.js --output-path=build",
+    "start": "wp-scripts start client/admin.js --output-path=build",
     "plugin-zip": "wp-scripts plugin-zip",
     "lint:scripts": "eslint client --ext .js,.jsx,.ts,.tsx",
     "lint:styles": "wp-scripts lint-style",

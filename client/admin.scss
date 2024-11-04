@@ -1,0 +1,25 @@
+.fixed .column-featured_tag {
+	width: 95px
+}
+
+tbody .column-featured_tag a {
+	font-size: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 0.15rem;
+
+	&::before {
+		font-family: 'Dashicons';
+		font-size: 24px;
+		color: inherit;
+	}
+
+	&[data-featured="yes"]::before {
+		content: "\f155";
+	}
+
+	&[data-featured="no"]::before {
+		content: "\f154";
+	}
+}
