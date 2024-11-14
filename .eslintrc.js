@@ -5,8 +5,4 @@ module.exports = {
 		'no-console': [ 'error', { allow: [ 'error' ] } ],
 		'jsdoc/require-param-type': 'off',
 	},
-	globals: {
-		wpQueuePluginData: 'readonly',
-		wpQueuePluginPostListData: 'readonly',
-	},
 };

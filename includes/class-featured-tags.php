@@ -1,4 +1,9 @@
 <?php
+/**
+ * The main class for the WP Featured Tags plugin.
+ *
+ * @package Featured_Tags
+ */
 
 namespace Featured_Tags;
 
@@ -9,6 +14,11 @@ namespace Featured_Tags;
  * and running the plugin.
  */
 class Featured_Tags {
+	/**
+	 * The instance of the class.
+	 *
+	 * @var self
+	 */
 	private static $instance = null;
 
 	/**
@@ -17,7 +27,7 @@ class Featured_Tags {
 	 * @return Featured_Tags
 	 */
 	public static function instance(): self {
-		if ( is_null( self::$instance ) ) {
+		if ( null === self::$instance ) {
 			self::$instance = new self();
 		}
 
@@ -181,8 +191,6 @@ class Featured_Tags {
 			$query->query_vars['orderby'] = 'meta_value';
 		}
 	}
-
-
 
 	/**
 	 * Renders the featured tag column.
